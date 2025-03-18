@@ -60,5 +60,8 @@ router.delete("/", (req, res) => {
         res.json({ message: "Post deleted successfully" });
     });
 });
-
+router.post("/craete", (req, res) => {
+    const { email, password } = req.body;
+    console.log(email,"ghjsagjhgasjdg")
+})
 module.exports = router;
